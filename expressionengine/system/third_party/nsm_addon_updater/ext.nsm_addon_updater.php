@@ -78,7 +78,7 @@ class Nsm_addon_updater_ext
 			&& isset($this->settings['member_groups'][$this->EE->session->userdata['group_id']]['show_notification']))
 		{
 			$script_url = $this->EE->config->system_url() . "expressionengine/third_party/nsm_addon_updater/views/js/update.js";
-			$this->EE->cp->add_to_foot("<script src='".$script_url."' type='text/javascript' charset='utf-8'></script>");
+			$this->EE->cp->add_to_head("<script src='".$script_url."' type='text/javascript' charset='utf-8'></script>");
 		}
 
 	}
